@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{6D0F4B51-F8F3-9452-2B95-3318E2651AA5}") = "Hardcore Zombie Psychiatrist", "Assembly-CSharp-firstpass-vs.csproj", "{7431341D-51BF-A4F9-6ED2-3D1BF1BAFAA4}"
+EndProject
+Project("{6D0F4B51-F8F3-9452-2B95-3318E2651AA5}") = "Hardcore Zombie Psychiatrist", "Assembly-CSharp-vs.csproj", "{6230925E-2031-2F52-90CB-F0B7D12DCE77}"
+EndProject
+Project("{6D0F4B51-F8F3-9452-2B95-3318E2651AA5}") = "Hardcore Zombie Psychiatrist", "Assembly-CSharp-Editor-vs.csproj", "{BB7ADF40-3C79-8C4D-0517-9EAAEEE56B45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7431341D-51BF-A4F9-6ED2-3D1BF1BAFAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7431341D-51BF-A4F9-6ED2-3D1BF1BAFAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7431341D-51BF-A4F9-6ED2-3D1BF1BAFAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7431341D-51BF-A4F9-6ED2-3D1BF1BAFAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6230925E-2031-2F52-90CB-F0B7D12DCE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6230925E-2031-2F52-90CB-F0B7D12DCE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6230925E-2031-2F52-90CB-F0B7D12DCE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6230925E-2031-2F52-90CB-F0B7D12DCE77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB7ADF40-3C79-8C4D-0517-9EAAEEE56B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB7ADF40-3C79-8C4D-0517-9EAAEEE56B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB7ADF40-3C79-8C4D-0517-9EAAEEE56B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB7ADF40-3C79-8C4D-0517-9EAAEEE56B45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+																																																																												GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 120
+		$3.TabWidth = 4
+		$3.IndentWidth = 4
+		$3.EolMarker = Unix
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/plain
+		$3.scope = text/plain
+	EndGlobalSection
+
+EndGlobal

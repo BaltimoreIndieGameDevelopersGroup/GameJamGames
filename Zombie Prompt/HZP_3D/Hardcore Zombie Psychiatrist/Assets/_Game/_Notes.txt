@@ -1,0 +1,10 @@
+Layers:
+8 = MiniMap
+9 = Sensory
+10 = Mobiles
+
+Tags:
+0 = Patient
+1 = Zombie
+
+Physics: no collision Default & Sensory
