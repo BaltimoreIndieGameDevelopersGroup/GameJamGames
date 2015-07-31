@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: c995ebeb8f57045d2bac810d73a34c69
+timeCreated: 1432484335
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ProfessorWalk_0
+    21300002: ProfessorWalk_1
+    21300004: ProfessorWalk_2
+    21300006: ProfessorWalk_3
+    21300008: ProfessorWalk_4
+    21300010: ProfessorWalk_5
+    21300012: ProfessorWalk_6
+    21300014: ProfessorWalk_7
+    21300016: ProfessorWalk_8
+    21300018: ProfessorWalk_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ProfessorWalk_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1215
+        width: 353
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ProfessorWalk_1
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1213
+        width: 353
+        height: 602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ProfessorWalk_2
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 1210
+        width: 353
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ProfessorWalk_3
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 1207
+        width: 353
+        height: 608
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ProfessorWalk_4
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 1217
+        width: 353
+        height: 598
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ProfessorWalk_5
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 177
+        width: 353
+        height: 598
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ProfessorWalk_6
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 177
+        width: 353
+        height: 598
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ProfessorWalk_7
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 160
+        width: 353
+        height: 615
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ProfessorWalk_8
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 160
+        width: 353
+        height: 615
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ProfessorWalk_9
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 175
+        width: 353
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
