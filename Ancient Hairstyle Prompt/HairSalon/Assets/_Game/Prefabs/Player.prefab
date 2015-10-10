@@ -1,5 +1,20 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &111490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 433490}
+  m_Layer: 0
+  m_Name: Item Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &165238
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,11 +29,23 @@ GameObject:
   - 114: {fileID: 11485164}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &433490
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111490}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 455938}
+  m_RootOrder: 0
 --- !u!4 &455938
 Transform:
   m_ObjectHideFlags: 1
@@ -26,9 +53,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.96046448e-08, y: 1, z: -1.1920929e-07}
+  m_LocalPosition: {x: 3.03050756, y: .276472092, z: -8.14061451}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 433490}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!23 &2302812
@@ -73,8 +101,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 465302ebff43c9b459066ce409333a94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalAxis: Horizontal
-  verticalAxis: Vertical
+  horizontalAxis: Horizontal1
+  verticalAxis: Vertical1
+  actionButton: Action1
+  speed: 5
+  itemPosition: {fileID: 111490}
 --- !u!143 &14300510
 CharacterController:
   m_ObjectHideFlags: 1
