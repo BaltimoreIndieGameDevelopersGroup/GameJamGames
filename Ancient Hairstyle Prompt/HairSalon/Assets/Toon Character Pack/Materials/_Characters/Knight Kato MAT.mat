@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Knight Kato MAT
+  m_Shader: {fileID: 4800000, guid: d84268709d11078d11005b9844295342, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: a5b13769e547221489f08bc0b82a6a28, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Ramp
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ToonShade
+        second:
+          m_Texture: {fileID: 8900000, guid: 3c6df6577eb2f684d843d0ec3df29a5c, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Sampler
+        second:
+          m_Texture: {fileID: 2800000, guid: 283d54a6f3e484248aed3cc61e434cad, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Tex1
+        second:
+          m_Texture: {fileID: 8900000, guid: 26200156ceba94d45945249acfd510f8, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Tex2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Normals
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Mask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Clouds
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Glossiness
+        second: .430051804
+      data:
+        first:
+          name: _RimPower
+        second: 1.70777202
+      data:
+        first:
+          name: _LerpValue
+        second: .616580307
+      data:
+        first:
+          name: _AtmosFalloff
+        second: 3
+      data:
+        first:
+          name: _TimeScale
+        second: .00999999978
+      data:
+        first:
+          name: _AnisoCloudPower
+        second: 0
+      data:
+        first:
+          name: _Roughness
+        second: 0
+      data:
+        first:
+          name: _CloudHeight
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .604477644, g: .604477644, b: .604477644, a: 1}
+      data:
+        first:
+          name: _RimColor
+        second: {r: 0, g: .118881203, b: 1, a: 1}
+      data:
+        first:
+          name: _DiffuseColor
+        second: {r: 1, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _SpecularColor
+        second: {r: .300699413, g: 1, b: 0, a: 1}
+      data:
+        first:
+          name: _color
+        second: {r: .216783002, g: 0, b: 1, a: 1}
+      data:
+        first:
+          name: _EditorSinTime
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _EditorTime
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _AtmosNear
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _AtmosFar
+        second: {r: .105882354, g: .0980392173, b: .0823529437, a: 1}
+      data:
+        first:
+          name: _ColorSpec
+        second: {r: 1, g: 1, b: 1, a: 1}
