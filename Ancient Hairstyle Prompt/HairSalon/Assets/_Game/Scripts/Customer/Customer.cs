@@ -70,7 +70,7 @@ public class Customer : MonoBehaviour {
         SetRecipe(recipe.ToArray());
         if (recipe.Count == 0)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
             SpawnNewCustomer();
         }
     }
