@@ -8,7 +8,9 @@ public class PlayerController : MonoBehaviour {
     public string actionButton = "Action1";
     public float speed = 5;
     public GameObject itemPosition;
+    public UnityEngine.UI.Text scoreText;
 
+    private int score = 0;
     private CharacterController characterController;
     private GameObject item = null;
     private Table currentTable = null;
@@ -74,6 +76,7 @@ public class PlayerController : MonoBehaviour {
         {
             ReturnItem();
             currentCustomer.Serve();
+            AddScore();
         }
     }
 
@@ -88,7 +91,12 @@ public class PlayerController : MonoBehaviour {
             }
         }
         item = null;
+    }
 
+    public void AddScore()
+    {
+        score++;
+        scoreText.text = "Score: " + score.ToString();
     }
 
 }

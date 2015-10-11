@@ -77,7 +77,27 @@ public class Customer : MonoBehaviour {
 
     public void SpawnNewCustomer()
     {
+        foreach (var seat in FindObjectsOfType<Seat>())
+        {
+            if (seat.IsEmpty())
+            {
+                var newCustomer = Instantiate(this.gameObject) as GameObject;
+                seat.AddCustomer(newCustomer);
+                newCustomer.GetComponent<Customer>().SetRecipe(GenerateRecipe());
+                break;
+            }
+        }
+    }
 
+    public ItemType[] GenerateRecipe()
+    {
+        List<ItemType> recipe = new List<ItemType>();
+        var size = Random.Range(1, 6);
+        for (int i = 0; i < size; i++)
+        {
+            recipe.Add((ItemType)Random.Range(0, 4));
+        }
+        return recipe.ToArray();
     }
 
 }
