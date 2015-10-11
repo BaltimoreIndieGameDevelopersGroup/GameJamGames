@@ -65,6 +65,7 @@ public class PlayerController : MonoBehaviour {
                 item = currentTable.TakeItem();
                 item.transform.SetParent(itemPosition.transform);
                 item.transform.localPosition = Vector3.zero;
+                item.GetComponent<Item>().PlayPickupSound();
             }
         }
     }
@@ -75,7 +76,7 @@ public class PlayerController : MonoBehaviour {
         var itemType = itemScript.itemType;
         if ((item != null) && currentCustomer.IsWaitingForService(itemType))
         {
-            itemScript.PlaySound();
+            itemScript.PlayUseSound();
             ReturnItem();
             currentCustomer.Serve();
             AddScore();

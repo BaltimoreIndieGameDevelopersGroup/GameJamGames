@@ -5,10 +5,20 @@ public class Item : MonoBehaviour {
 
     public ItemType itemType;
 
-    public void PlaySound()
+    public void PlaySound(string soundFileName)
     {
-        var clip = Resources.Load(GetClipName()) as AudioClip;
+        var clip = Resources.Load(soundFileName) as AudioClip;
         AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
+    }
+
+    public void PlayPickupSound()
+    {
+        PlaySound("itemSwipe");
+    }
+
+    public void PlayUseSound()
+    {
+        PlaySound(GetClipName());
     }
 
     public string GetClipName()
