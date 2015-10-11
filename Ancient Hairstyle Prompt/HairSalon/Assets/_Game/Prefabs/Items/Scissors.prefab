@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3388508}
   - 135: {fileID: 13557466}
   - 23: {fileID: 2319092}
+  - 114: {fileID: 11422884}
   m_Layer: 0
   m_Name: Scissors
   m_TagString: Untagged
@@ -98,6 +99,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 128634}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &11422884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bed19f0399f2d83419b2994008f316d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 0
 --- !u!114 &11432850
 MonoBehaviour:
   m_ObjectHideFlags: 1

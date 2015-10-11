@@ -16,7 +16,6 @@ public class Table : MonoBehaviour
     {
         var itemToReturn = item;
         item = null;
-        //itemToReturn.SetActive(false);
         return itemToReturn;
     }
 
@@ -24,7 +23,6 @@ public class Table : MonoBehaviour
     {
         if (IsEmpty() && (itemToLeave != null))
         {
-            //itemToLeave.SetActive(true);
             itemToLeave.transform.SetParent(itemPosition.transform);
             itemToLeave.transform.localPosition = Vector3.zero;
             item = itemToLeave;

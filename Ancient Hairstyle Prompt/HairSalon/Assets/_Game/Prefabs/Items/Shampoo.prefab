@@ -47,6 +47,7 @@ GameObject:
   - 33: {fileID: 3377248}
   - 135: {fileID: 13526958}
   - 23: {fileID: 2316860}
+  - 114: {fileID: 11468620}
   m_Layer: 0
   m_Name: Shampoo
   m_TagString: Untagged
@@ -149,6 +150,18 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &11468620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bed19f0399f2d83419b2994008f316d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: 2
 --- !u!114 &11475170
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -261,6 +274,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_LocalPosition.x
       value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: itemType
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

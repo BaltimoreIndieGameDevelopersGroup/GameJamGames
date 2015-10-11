@@ -4,7 +4,7 @@ using System.Collections;
 public enum ItemType {
 
     Scissors,
-    Clipper,
+    Clippers,
     Shampoo,
     Dryer
 

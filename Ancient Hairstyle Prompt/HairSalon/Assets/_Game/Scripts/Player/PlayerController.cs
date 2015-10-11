@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
     private CharacterController characterController;
     private GameObject item = null;
     private Table currentTable = null;
+    private Customer currentCustomer = null;
 
     void Start () {
         characterController = GetComponent<CharacterController>();
@@ -26,45 +27,68 @@ public class PlayerController : MonoBehaviour {
             {
                 UseTable();
             }
+            else if (currentCustomer != null)
+            {
+                UseCustomer();
+            }
         }
 	}
 
     public void OnTriggerEnter(Collider other)
     {
         currentTable = other.GetComponent<Table>();
-        if (currentTable != null) Debug.Log("Entered table", currentTable);
+        currentCustomer = other.GetComponent<Customer>();
     }
 
     public void OnTriggerExit(Collider other)
     {
-        if (currentTable != null) Debug.Log("Left table", currentTable);
         currentTable = null;
+        currentCustomer = null;
     }
 
     private void UseTable()
     {
-        Debug.Log("Use table", currentTable);
         if (currentTable.IsEmpty())
         {
-            Debug.Log("Table is empty");
             if (item != null)
             {
-                Debug.Log("Leaving item");
                 currentTable.LeaveItem(item);
                 item = null;
             }
         }
         else
         {
-            Debug.Log("Table has something");
             if (item == null)
             {
-                Debug.Log("Taking item");
                 item = currentTable.TakeItem();
                 item.transform.SetParent(itemPosition.transform);
                 item.transform.localPosition = Vector3.zero;
             }
         }
+    }
+
+    private void UseCustomer()
+    {
+        var itemType = item.GetComponent<Item>().itemType;
+        if ((item != null) && currentCustomer.IsWaitingForService(itemType))
+        {
+            ReturnItem();
+            currentCustomer.Serve();
+        }
+    }
+
+    private void ReturnItem()
+    {
+        foreach (var table in FindObjectsOfType<Table>())
+        {
+            if (table.IsEmpty())
+            {
+                table.LeaveItem(item);
+                break;
+            }
+        }
+        item = null;
+
     }
 
 }

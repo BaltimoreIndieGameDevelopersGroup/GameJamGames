@@ -7,11 +7,14 @@ public class Customer : MonoBehaviour {
     public GameObject unhappyIndicator;
     public GameObject recipeCanvas;
     public GameObject scissorsIndicatorTemplate;
-    public GameObject clipperIndicatorTemplate;
+    public GameObject clippersIndicatorTemplate;
     public GameObject shampooIndicatorTemplate;
     public GameObject dryerIndicatorTemplate;
 
     public List<ItemType> recipe;
+
+    private bool isBeingServed = false;
+    private List<GameObject> instantiatedIndicators = new List<GameObject>();
 
     public void Start()
     {
@@ -22,6 +25,8 @@ public class Customer : MonoBehaviour {
 
     public void SetRecipe(ItemType[] recipe)
     {
+        instantiatedIndicators.ForEach(indicator => Destroy(indicator));
+        instantiatedIndicators.Clear();
         this.recipe = new List<ItemType>(recipe);
         foreach (var itemType in recipe)
         {
@@ -29,6 +34,7 @@ public class Customer : MonoBehaviour {
             var indicator = Instantiate(template);
             indicator.transform.SetParent(recipeCanvas.transform, false);
             indicator.SetActive(true);
+            instantiatedIndicators.Add(indicator);
             
         }
     }
@@ -36,7 +42,7 @@ public class Customer : MonoBehaviour {
     private void HideItemIndicatorTemplates()
     {
         scissorsIndicatorTemplate.SetActive(false);
-        clipperIndicatorTemplate.SetActive(false);
+        clippersIndicatorTemplate.SetActive(false);
         shampooIndicatorTemplate.SetActive(false);
         dryerIndicatorTemplate.SetActive(false);
     }
@@ -46,11 +52,32 @@ public class Customer : MonoBehaviour {
         switch (itemType)
         {
             case ItemType.Scissors: return scissorsIndicatorTemplate;
-            case ItemType.Clipper: return clipperIndicatorTemplate;
+            case ItemType.Clippers: return clippersIndicatorTemplate;
             case ItemType.Shampoo: return shampooIndicatorTemplate;
             case ItemType.Dryer: return dryerIndicatorTemplate;
             default: return null;
         }
+    }
+
+    public bool IsWaitingForService(ItemType itemType)
+    {
+        return (recipe.Count > 0) && (recipe[0] == itemType) && !isBeingServed;
+    }
+
+    public void Serve()
+    {
+        recipe.RemoveAt(0);
+        SetRecipe(recipe.ToArray());
+        if (recipe.Count == 0)
+        {
+            Destroy(this);
+            SpawnNewCustomer();
+        }
+    }
+
+    public void SpawnNewCustomer()
+    {
+
     }
 
 }

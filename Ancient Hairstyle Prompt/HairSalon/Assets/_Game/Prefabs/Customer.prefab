@@ -50,6 +50,7 @@ GameObject:
   - 136: {fileID: 13697694}
   - 23: {fileID: 2374260}
   - 114: {fileID: 11494142}
+  - 135: {fileID: 13585618}
   m_Layer: 0
   m_Name: Customer
   m_TagString: Untagged
@@ -571,11 +572,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unhappyIndicator: {fileID: 150234}
-  scissorsIndicator: {fileID: 141526}
-  clipperIndicator: {fileID: 113256}
-  shampooIndicator: {fileID: 134350}
-  dryerIndicator: {fileID: 128718}
-  recipe: []
+  recipeCanvas: {fileID: 100392}
+  scissorsIndicatorTemplate: {fileID: 141526}
+  clippersIndicatorTemplate: {fileID: 113256}
+  shampooIndicatorTemplate: {fileID: 134350}
+  dryerIndicatorTemplate: {fileID: 128718}
+  recipe: 000000000200000003000000
 --- !u!114 &11494338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -608,6 +610,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Cut
+--- !u!135 &13585618
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &13697694
 CapsuleCollider:
   m_ObjectHideFlags: 1
