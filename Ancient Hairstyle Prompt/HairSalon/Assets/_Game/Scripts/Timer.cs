@@ -17,6 +17,8 @@ public class Timer : MonoBehaviour {
             elapsed += Time.deltaTime;
         }
         endOfGameText.SetActive(true);
+        var clip = Resources.Load("EndOfGame") as AudioClip;
+        AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
         Time.timeScale = 0;
 	}
 	

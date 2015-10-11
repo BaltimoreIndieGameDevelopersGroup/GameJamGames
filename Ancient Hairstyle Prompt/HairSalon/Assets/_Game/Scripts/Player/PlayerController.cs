@@ -71,9 +71,11 @@ public class PlayerController : MonoBehaviour {
 
     private void UseCustomer()
     {
-        var itemType = item.GetComponent<Item>().itemType;
+        var itemScript = item.GetComponent<Item>();
+        var itemType = itemScript.itemType;
         if ((item != null) && currentCustomer.IsWaitingForService(itemType))
         {
+            itemScript.PlaySound();
             ReturnItem();
             currentCustomer.Serve();
             AddScore();

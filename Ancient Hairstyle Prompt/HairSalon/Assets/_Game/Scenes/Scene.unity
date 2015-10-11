@@ -298,14 +298,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 147642, guid: ebc465e30a955cf4884a597dfaa2246f, type: 2}
-      propertyPath: m_Name
-      value: Seat1
-      objectReference: {fileID: 0}
     - target: {fileID: 11403248, guid: ebc465e30a955cf4884a597dfaa2246f, type: 2}
       propertyPath: customer
       value: 
       objectReference: {fileID: 852706312}
+    - target: {fileID: 147642, guid: ebc465e30a955cf4884a597dfaa2246f, type: 2}
+      propertyPath: m_Name
+      value: Seat1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ebc465e30a955cf4884a597dfaa2246f, type: 2}
   m_IsPrefabParent: 0
@@ -2772,12 +2772,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1319295247}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57f1cc243ba166a44976e5fcf6525820, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 12
+  duration: 1200
   slider: {fileID: 359344685}
   endOfGameText: {fileID: 794646709}
 --- !u!1 &1382450394

@@ -70,7 +70,6 @@ public class Customer : MonoBehaviour {
         SetRecipe(recipe.ToArray());
         if (recipe.Count == 0)
         {
-            Destroy(this.gameObject);
             SpawnNewCustomer();
         }
     }
@@ -81,9 +80,8 @@ public class Customer : MonoBehaviour {
         {
             if (seat.IsEmpty())
             {
-                var newCustomer = Instantiate(this.gameObject) as GameObject;
-                seat.AddCustomer(newCustomer);
-                newCustomer.GetComponent<Customer>().SetRecipe(GenerateRecipe());
+                seat.AddCustomer(this.gameObject);
+                SetRecipe(GenerateRecipe());
                 break;
             }
         }
