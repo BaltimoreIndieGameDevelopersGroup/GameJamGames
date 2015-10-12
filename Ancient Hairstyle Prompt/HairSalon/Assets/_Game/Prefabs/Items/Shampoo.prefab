@@ -55,6 +55,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &146224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 423504}
+  - 33: {fileID: 3327124}
+  - 23: {fileID: 2346808}
+  m_Layer: 0
+  m_Name: Shampoo N170707
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &423504
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146224}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
+  m_LocalPosition: {x: -0, y: 0, z: -.910000026}
+  m_LocalScale: {x: .000199999995, y: .000199999995, z: .000199999995}
+  m_Children: []
+  m_Father: {fileID: 468576}
+  m_RootOrder: 1
 --- !u!4 &468576
 Transform:
   m_ObjectHideFlags: 1
@@ -66,6 +95,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 22431918}
+  - {fileID: 423504}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!23 &2316860
@@ -74,7 +104,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145374}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
@@ -92,6 +122,40 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!23 &2346808
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146224}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 4dcbdcd656e082940ae9720c90bdfea3, type: 2}
+  - {fileID: 2100000, guid: 9afaf018dee540442ac9fbbd690159ee, type: 2}
+  - {fileID: 2100000, guid: e10df0f9fede7d04793da7bf472c1f8c, type: 2}
+  - {fileID: 2100000, guid: d27d5df4398cf4f41a43018ac67e5550, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3327124
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146224}
+  m_Mesh: {fileID: 4300000, guid: 38c40fce86180d046ba9ead2a27a9462, type: 3}
 --- !u!33 &3377248
 MeshFilter:
   m_ObjectHideFlags: 1

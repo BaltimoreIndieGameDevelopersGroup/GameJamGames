@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour {
 
     private int score = 0;
     private CharacterController characterController;
-    private GameObject item = null;
+    private Item item = null;
     private Table currentTable = null;
     private Customer currentCustomer = null;
 
@@ -65,18 +65,16 @@ public class PlayerController : MonoBehaviour {
                 item = currentTable.TakeItem();
                 item.transform.SetParent(itemPosition.transform);
                 item.transform.localPosition = Vector3.zero;
-                item.GetComponent<Item>().PlayPickupSound();
+                item.PlayPickupSound();
             }
         }
     }
 
     private void UseCustomer()
     {
-        var itemScript = item.GetComponent<Item>();
-        var itemType = itemScript.itemType;
-        if ((item != null) && currentCustomer.IsWaitingForService(itemType))
+        if ((item != null) && currentCustomer.IsWaitingForService(item.itemType))
         {
-            itemScript.PlayUseSound();
+            item.PlayUseSound();
             ReturnItem();
             currentCustomer.Serve();
             AddScore();

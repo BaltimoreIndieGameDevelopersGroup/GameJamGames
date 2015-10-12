@@ -20,14 +20,14 @@ public class Customer : MonoBehaviour {
     {
         unhappyIndicator.SetActive(false);
         HideItemIndicatorTemplates();
-        SetRecipe(recipe.ToArray());
+        SetRecipe(recipe);
     }
 
-    public void SetRecipe(ItemType[] recipe)
+    public void SetRecipe(List<ItemType> recipe)
     {
         instantiatedIndicators.ForEach(indicator => Destroy(indicator));
         instantiatedIndicators.Clear();
-        this.recipe = new List<ItemType>(recipe);
+        this.recipe = recipe;
         foreach (var itemType in recipe)
         {
             var template = GetItemIndicatorTemplate(itemType);
@@ -67,35 +67,38 @@ public class Customer : MonoBehaviour {
     public void Serve()
     {
         recipe.RemoveAt(0);
-        SetRecipe(recipe.ToArray());
+        SetRecipe(recipe);
         if (recipe.Count == 0)
         {
-            SpawnNewCustomer();
+            RecycleCustomer();
         }
     }
 
-    public void SpawnNewCustomer()
+    public void RecycleCustomer()
     {
+        var seats = new List<Seat>(FindObjectsOfType<Seat>());
+        var oldSeat = seats.Find(seat => seat.customer == this);
         foreach (var seat in FindObjectsOfType<Seat>())
         {
             if (seat.IsEmpty())
             {
-                seat.AddCustomer(this.gameObject);
+                seat.AddCustomer(this);
                 SetRecipe(GenerateRecipe());
                 break;
             }
         }
+        if (oldSeat != null) oldSeat.RemoveCustomer();
     }
 
-    public ItemType[] GenerateRecipe()
+    public List<ItemType> GenerateRecipe()
     {
-        List<ItemType> recipe = new List<ItemType>();
+        var recipe = new List<ItemType>();
         var size = Random.Range(1, 6);
         for (int i = 0; i < size; i++)
         {
             recipe.Add((ItemType)Random.Range(0, 4));
         }
-        return recipe.ToArray();
+        return recipe;
     }
 
 }
